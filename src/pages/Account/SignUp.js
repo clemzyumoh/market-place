@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { BsCheckCircleFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import { logoLight } from "../../assets/images";
+import  log1 from "../../assets/images/logo-white.png";
 
 const SignUp = () => {
   // ============= Initial State Start here =============
@@ -134,7 +135,7 @@ const SignUp = () => {
       <div className="w-1/2 hidden lgl:inline-flex h-full text-white">
         <div className="w-[450px] h-full bg-primeColor px-10 flex flex-col gap-6 justify-center">
           <Link to="/">
-            <img src={logoLight} alt="logoImg" className="w-28" />
+            <img src={log1} alt="logoImg" className="w-[80vw]" />
           </Link>
           <div className="flex flex-col gap-1 -mt-1">
             <h1 className="font-titleFont text-xl font-medium">
@@ -148,7 +149,7 @@ const SignUp = () => {
             </span>
             <p className="text-base text-gray-300">
               <span className="text-white font-semibold font-titleFont">
-                Get started fast with OREBI
+                Get started fast with DELIGHT PROPERTIES
               </span>
               <br />
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab omnis
@@ -161,7 +162,7 @@ const SignUp = () => {
             </span>
             <p className="text-base text-gray-300">
               <span className="text-white font-semibold font-titleFont">
-                Access all OREBI services
+                Access all DELIGHT PROPERTIES services
               </span>
               <br />
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab omnis
@@ -183,7 +184,7 @@ const SignUp = () => {
           </div>
           <div className="flex items-center justify-between mt-10">
             <p className="text-sm font-titleFont font-semibold text-gray-300 hover:text-white cursor-pointer duration-300">
-              © OREBI
+              © DELIGHT PROPERTIES
             </p>
             <p className="text-sm font-titleFont font-semibold text-gray-300 hover:text-white cursor-pointer duration-300">
               Terms
