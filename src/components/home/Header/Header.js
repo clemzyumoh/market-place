@@ -8,6 +8,7 @@ import Image from "../../designLayouts/Image";
 import { navBarList } from "../../../constants";
 import Flex from "../../designLayouts/Flex";
 import log from "../../../assets/images/Group 2.png";
+import log1 from "../../../assets/images/logo-white.png";
 
 const Header = () => {
   const [showMenu, setShowMenu] = useState(true);
@@ -70,7 +71,7 @@ const Header = () => {
                   <div className="w-full h-full bg-primeColor p-6">
                     <img
                       className="w-28 mb-6"
-                      src={logoLight}
+                      src={log1}
                       alt="logoLight"
                     />
                     <ul className="text-gray-200 flex flex-col gap-2">
