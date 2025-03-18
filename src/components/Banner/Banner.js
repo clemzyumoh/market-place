@@ -5,8 +5,14 @@ import {
   bannerImgOne,
   bannerImgTwo,
   bannerImgThree,
+
 } from "../../assets/images";
 import Image from "../designLayouts/Image";
+import bannerFour from "../../assets/images/banner/bannerFour.jpg"
+import banner2 from "../../assets/images/banner/Slide.png";
+import banner3 from "../../assets/images/banner/Slide1.png";
+import banner4 from "../../assets/images/banner/Slide2.png";
+import banner1 from "../../assets/images/banner/slider.png"
 
 const Banner = () => {
   const [dotActive, setDocActive] = useState(0);
@@ -103,18 +109,18 @@ const Banner = () => {
     <div className="w-full bg-white">
       <Slider {...settings}>
         <Link to="/offer">
-          <div>
-            <Image imgSrc={bannerImgOne} />
+          <div >
+            <Image imgSrc={banner1}  />
           </div>
         </Link>
         <Link to="/offer">
           <div>
-            <Image imgSrc={bannerImgTwo} />
+            <Image imgSrc={banner3} />
           </div>
         </Link>
         <Link to="/offer">
           <div>
-            <Image imgSrc={bannerImgThree} />
+            <Image imgSrc={banner4} />
           </div>
         </Link>
       </Slider>

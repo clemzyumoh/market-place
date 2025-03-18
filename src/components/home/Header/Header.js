@@ -7,6 +7,7 @@ import { logo, logoLight } from "../../../assets/images";
 import Image from "../../designLayouts/Image";
 import { navBarList } from "../../../constants";
 import Flex from "../../designLayouts/Flex";
+import log from "../../../assets/images/Group 2.png";
 
 const Header = () => {
   const [showMenu, setShowMenu] = useState(true);
@@ -32,7 +33,7 @@ const Header = () => {
         <Flex className="flex items-center justify-between h-full">
           <Link to="/">
             <div>
-              <h1>Gadgetify</h1>
+              <img src={ log} alt="logo" className="w-1/2"/>
             </div>
           </Link>
           <div>
