@@ -7,8 +7,8 @@ import { logo, logoLight } from "../../../assets/images";
 import Image from "../../designLayouts/Image";
 import { navBarList } from "../../../constants";
 import Flex from "../../designLayouts/Flex";
-import log from "../../../assets/images/Group 2.png";
-import log1 from "../../../assets/images/logo-white.png";
+import log from "../../../assets/images/kortex.png";
+import log1 from "../../../assets/images/kortex1.png";
 
 const Header = () => {
   const [showMenu, setShowMenu] = useState(true);
@@ -34,7 +34,7 @@ const Header = () => {
         <Flex className="flex items-center justify-between h-full">
           <Link to="/">
             <div>
-              <img src={ log} alt="logo" className="w-1/2"/>
+              <img src={log} alt="logo" className="w- h-14 md:h-20" />
             </div>
           </Link>
           <div>
@@ -68,12 +68,15 @@ const Header = () => {
                   animate={{ x: 0, opacity: 1 }}
                   transition={{ duration: 0.5 }}
                   className="w-[80%] h-full relative">
-                  <div className="w-full h-full bg-primeColor p-6">
-                    <img
-                      className="w-1/2 mb-6"
-                      src={log1}
-                      alt="logoLight"
-                    />
+                  <div className="w-full h-full bg-[#212844] p-6">
+                    <div className="flex items-center mb-4 justify-start">
+                      <img
+                        className=" h-14 "
+                        src={log1}
+                        alt="logoLight"
+                      />
+      
+                    </div>
                     <ul className="text-gray-200 flex flex-col gap-2">
                       {navBarList.map((item) => (
                         <li

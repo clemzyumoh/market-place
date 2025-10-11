@@ -31,43 +31,32 @@ const Footer = () => {
     <div className="w-full bg-[#F5F5F3] py-20">
       <div className="max-w-container mx-auto grid grid-cols-1 md:grid-cols-2  xl:grid-cols-6 px-4 gap-10">
         <div className="col-span-2">
-          <FooterListTitle title=" More about DELIGHT PROPERTIES" />
+          <FooterListTitle title=" More about Kortex" />
           <div className="flex flex-col gap-6">
             <p className="text-base w-full xl:w-[80%]">
-              At Delight Properties, we specialize in buying and selling
-              brand-new and neatly used home appliances at unbeatable prices!
-              Whether you're looking for a premium upgrade or a budget-friendly
-              option, we’ve got you covered.
+              At Kortex, we offer a curated selection of the latest gadgets,
+              trendy clothes, stylish accessories, and quality furniture and
+              home appliances. Whether you're looking for a premium brand-new
+              item or a high-quality pre-owned find, we've got you covered with
+              a wide range of options at unbeatable prices.
             </p>
             <ul className="flex items-center gap-2">
-              <a
-                href="/#"
-                target="_blank"
-                rel="noreferrer">
+              <a href="/#" target="_blank" rel="noreferrer">
                 <li className="w-7 h-7 bg-primeColor text-gray-100 hover:text-white cursor-pointer text-lg rounded-full flex justify-center items-center hover:bg-black duration-300">
                   <FaYoutube />
                 </li>
               </a>
-              <a
-                href="/#"
-                target="_blank"
-                rel="noreferrer">
+              <a href="/#" target="_blank" rel="noreferrer">
                 <li className="w-7 h-7 bg-primeColor text-gray-100 hover:text-white cursor-pointer text-lg rounded-full flex justify-center items-center hover:bg-black duration-300">
                   <FaGithub />
                 </li>
               </a>
-              <a
-                href="/#"
-                target="_blank"
-                rel="noreferrer">
+              <a href="/#" target="_blank" rel="noreferrer">
                 <li className="w-7 h-7 bg-primeColor text-gray-100 hover:text-white cursor-pointer text-lg rounded-full flex justify-center items-center hover:bg-black duration-300">
                   <FaFacebook />
                 </li>
               </a>
-              <a
-                href="/#"
-                target="_blank"
-                rel="noreferrer">
+              <a href="/#" target="_blank" rel="noreferrer">
                 <li className="w-7 h-7 bg-primeColor text-gray-100 hover:text-white cursor-pointer text-lg rounded-full flex justify-center items-center hover:bg-black duration-300">
                   <FaLinkedin />
                 </li>

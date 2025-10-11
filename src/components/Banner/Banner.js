@@ -1,18 +1,13 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Slider from "react-slick";
-import {
-  bannerImgOne,
-  bannerImgTwo,
-  bannerImgThree,
 
-} from "../../assets/images";
 import Image from "../designLayouts/Image";
-import bannerFour from "../../assets/images/banner/bannerFour.jpg"
-import banner2 from "../../assets/images/banner/Slide.png";
-import banner3 from "../../assets/images/banner/Slide1.png";
-import banner4 from "../../assets/images/banner/Slide2.png";
-import banner1 from "../../assets/images/banner/slider.png"
+
+import banner1 from "../../assets/images/banner/banner6.png"
+import banner2 from "../../assets/images/banner/banner3.png";
+import banner4 from "../../assets/images/banner/banner7.png";
+
 
 const Banner = () => {
   const [dotActive, setDocActive] = useState(0);
@@ -44,7 +39,7 @@ const Banner = () => {
           i === dotActive
             ? {
                 width: "30px",
-                color: "#262626",
+                color: "white",
                 borderRight: "3px #262626 solid",
                 padding: "8px 0",
                 cursor: "pointer",
@@ -84,7 +79,7 @@ const Banner = () => {
                 i === dotActive
                   ? {
                       width: "25px",
-                      color: "#262626",
+                      color: "white",
                       borderRight: "3px #262626 solid",
                       cursor: "pointer",
                       fontSize: "12px",
@@ -115,7 +110,7 @@ const Banner = () => {
         </Link>
         <Link to="/offer">
           <div>
-            <Image imgSrc={banner3} />
+            <Image imgSrc={banner2} />
           </div>
         </Link>
         <Link to="/offer">

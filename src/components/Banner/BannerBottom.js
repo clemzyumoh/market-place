@@ -1,6 +1,7 @@
 import React from "react";
 import { MdLocalShipping } from "react-icons/md";
 import { CgRedo } from "react-icons/cg";
+import { RiCustomerService2Fill } from "react-icons/ri";
 
 const BannerBottom = () => {
   return (
@@ -21,6 +22,12 @@ const BannerBottom = () => {
             <CgRedo />
           </span>
           <p className="text-lightText text-base">Return policy in 30 days</p>
+        </div>
+        <div className="flex md:w-auto items-center gap-2 w-72 shadow-sm hover:shadow-md duration-300">
+          <span className="text-2xl text-center w-6">
+            <RiCustomerService2Fill/>
+          </span>
+          <p className="text-lightText text-base">Online support</p>
         </div>
       </div>
     </div>
