@@ -2,11 +2,14 @@ import React from "react";
 import Heading from "../Products/Heading";
 import Product from "../Products/Product";
 import {
-  bestSellerOne,
-  bestSellerTwo,
-  bestSellerThree,
+//  bestSellerOne,
+//  bestSellerTwo,
+ // bestSellerThree,
   bestSellerFour,
 } from "../../../assets/images/index";
+import gadget4 from "../../../assets/images/products/gadgets/gadget4.png";
+import clothes11 from "../../../assets/images/products/clothes/clothes11.png";
+import furniture4 from "../../../assets/images/products/furniture/furniture4.png";
 
 const BestSellers = () => {
   return (
@@ -15,30 +18,33 @@ const BestSellers = () => {
       <div className="w-full grid grid-cols-1 md:grid-cols-2 lgl:grid-cols-3 xl:grid-cols-4 gap-10">
         <Product
           _id="1011"
-          img={bestSellerOne}
-          productName="Flower Base"
-          price="35.00"
-          color="Blank and White"
+          img={gadget4}
+          productName="Drone with Camera"
+          category="gadgets"
+          price="600.00"
+          color="Gray"
           badge={true}
-          des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis."
+          des="High-performance drone with HD camera for aerial photography."
         />
         <Product
           _id="1012"
-          img={bestSellerTwo}
-          productName="New Backpack"
-          price="180.00"
-          color="Gray"
-          badge={false}
-          des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis."
+          img={clothes11}
+          productName="Basketball Shoes"
+          category="clothes"
+          price="300.00"
+          color="white"
+          badge={true}
+          des="High-performance basketball shoes with superior grip."
         />
         <Product
           _id="1013"
-          img={bestSellerThree}
-          productName="Household materials"
-          price="25.00"
-          color="Mixed"
-          badge={true}
-          des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis."
+          img={furniture4}
+          productName="Native Light Chair"
+          category="furniture"
+          price="250.00"
+          color="Beige"
+          badge={false}
+          des="Lightweight native-style chair perfect for modern interiors."
         />
         <Product
           _id="1014"

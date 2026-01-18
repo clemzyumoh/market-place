@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { BsCheckCircleFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
-import { logoLight } from "../../assets/images";
-import log1 from "../../assets/images/logo-white.png";
+//import { logoLight } from "../../assets/images";
+import log1 from "../../assets/images/kortex1.png";
 
 
 const SignIn = () => {
@@ -48,7 +48,7 @@ const SignIn = () => {
   return (
     <div className="w-full h-screen flex items-center justify-center">
       <div className="w-1/2 hidden lgl:inline-flex h-full text-white">
-        <div className="w-[450px] h-full bg-primeColor px-10 flex flex-col gap-6 justify-center">
+        <div className="w-[450px] h-full bg-[#212844] px-10 flex flex-col gap-6 justify-center">
           <Link to="/">
             <img src={log1} alt="logoImg" className="w-[80vw]" />
           </Link>
@@ -64,7 +64,7 @@ const SignIn = () => {
             </span>
             <p className="text-base text-gray-300">
               <span className="text-white font-semibold font-titleFont">
-                Get started fast with DELIGHT PROPERTIES
+                Get started fast with kortex
               </span>
               <br />
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab omnis
@@ -77,7 +77,7 @@ const SignIn = () => {
             </span>
             <p className="text-base text-gray-300">
               <span className="text-white font-semibold font-titleFont">
-                Access all DELIGHT PROPERTIES services
+                Access all kortex services
               </span>
               <br />
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab omnis
@@ -100,7 +100,7 @@ const SignIn = () => {
           <div className="flex items-center justify-between mt-10">
             <Link to="/">
               <p className="text-sm font-titleFont font-semibold text-gray-300 hover:text-white cursor-pointer duration-300">
-                © DELIGHT PROPERTIES
+                © kortex
               </p>
             </Link>
             <p className="text-sm font-titleFont font-semibold text-gray-300 hover:text-white cursor-pointer duration-300">
@@ -117,15 +117,14 @@ const SignIn = () => {
       </div>
       <div className="w-full lgl:w-1/2 h-full">
         {successMsg ? (
-          <div className="w-full lgl:w-[500px] h-full flex flex-col justify-center">
-            <p className="w-full px-4 py-10 text-green-500 font-medium font-titleFont">
+          <div className="w-full lgl:w-[500px] h-full px-5 flex flex-col justify-center">
+            <p className="w-full  py-10 text-green-500 font-medium font-titleFont">
               {successMsg}
             </p>
             <Link to="/signup">
               <button
-                className="w-full h-10 bg-primeColor text-gray-200 rounded-md text-base font-titleFont font-semibold 
-            tracking-wide hover:bg-black hover:text-white duration-300"
-              >
+                className="w-full h-10  bg-[#212844] text-gray-200 rounded-md text-base font-titleFont font-semibold 
+            tracking-wide hover:bg-black hover:text-white duration-300">
                 Sign Up
               </button>
             </Link>
@@ -179,8 +178,7 @@ const SignIn = () => {
 
                 <button
                   onClick={handleSignUp}
-                  className="bg-primeColor hover:bg-black text-gray-200 hover:text-white cursor-pointer w-full text-base font-medium h-10 rounded-md  duration-300"
-                >
+                  className="bg-[#212844] hover:bg-black text-gray-200 hover:text-white cursor-pointer w-full text-base font-medium h-10 rounded-md  duration-300">
                   Sign In
                 </button>
                 <p className="text-sm text-center font-titleFont font-medium">

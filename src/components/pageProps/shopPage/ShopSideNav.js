@@ -4,10 +4,24 @@ import Category from "./shopBy/Category";
 import Color from "./shopBy/Color";
 import Price from "./shopBy/Price";
 
-const ShopSideNav = () => {
+// const ShopSideNav = () => {
+//   return (
+//     <div className="w-full flex flex-col gap-6">
+//       <Category icons={false} />
+//       <Color />
+//       <Brand />
+//       <Price />
+//     </div>
+//   );
+// };
+
+const ShopSideNav = ({ selectedCategory, onCategoryChange }) => {
   return (
     <div className="w-full flex flex-col gap-6">
-      <Category icons={false} />
+      <Category
+        selectedCategory={selectedCategory}
+        onCategoryChange={onCategoryChange}
+      />
       <Color />
       <Brand />
       <Price />
@@ -16,3 +30,4 @@ const ShopSideNav = () => {
 };
 
 export default ShopSideNav;
+

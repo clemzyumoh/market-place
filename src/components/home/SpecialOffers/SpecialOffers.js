@@ -2,12 +2,14 @@ import React from "react";
 import Heading from "../Products/Heading";
 import Product from "../Products/Product";
 import {
-  spfOne,
+ // spfOne,
   spfTwo,
   spfThree,
-  spfFour,
+ // spfFour,
 } from "../../../assets/images/index";
 
+import gadget5 from "../../../assets/images/products/gadgets/gadget5.png";
+import clothes1 from "../../../assets/images/products/clothes/clothes1.png";
 const SpecialOffers = () => {
   return (
     <div className="w-full pb-20">
@@ -15,12 +17,13 @@ const SpecialOffers = () => {
       <div className="w-full grid grid-cols-1 md:grid-cols-2 lgl:grid-cols-3 xl:grid-cols-4 gap-10">
         <Product
           _id="1101"
-          img={spfOne}
-          productName="Cap for Boys"
-          price="35.00"
-          color="Blank and White"
-          badge={true}
-          des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis."
+          img={gadget5}
+          productName="iPad 9th Gen"
+          category="gadgets"
+          price="870.00"
+          color="Silver"
+          badge={false}
+          des="Apple iPad 9th generation with powerful performance and sleek design."
         />
         <Product
           _id="1102"
@@ -42,12 +45,13 @@ const SpecialOffers = () => {
         />
         <Product
           _id="1104"
-          img={spfFour}
-          productName="Sun glasses"
-          price="220.00"
-          color="Black"
+          img={clothes1}
+          productName="Gradient Graphic T-shirt"
+          category="clothes"
+          price="145.00"
+          color="Multi"
           badge={true}
-          des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis."
+          des="Stylish gradient graphic t-shirt made from premium cotton."
         />
       </div>
     </div>

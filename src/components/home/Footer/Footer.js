@@ -39,7 +39,7 @@ const Footer = () => {
               home appliances. Whether you're looking for a premium brand-new
               item or a high-quality pre-owned find, we've got you covered with
               a wide range of options at unbeatable prices.
-            </p>
+            </p> 
             <ul className="flex items-center gap-2">
               <a href="/#" target="_blank" rel="noreferrer">
                 <li className="w-7 h-7 bg-primeColor text-gray-100 hover:text-white cursor-pointer text-lg rounded-full flex justify-center items-center hover:bg-black duration-300">

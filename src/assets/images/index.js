@@ -26,7 +26,8 @@ import spfThree from "./products/specialOffer/spfThree.webp";
 import spfFour from "./products/specialOffer/spfFour.webp";
 
 // Year Product
-import productOfTheYear from "./products/productOfTheYear.webp";
+//import productOfTheYear from "./products/productOfTheYear.webp";
+import productOfTheYear from "./products/productofyear.png";
 // ============== Products End here ======================
 import paymentCard from "./payment.png";
 import emptyCart from "../images/emptyCart.png";

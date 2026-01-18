@@ -3,13 +3,19 @@ import Slider from "react-slick";
 import Heading from "../Products/Heading";
 import Product from "../Products/Product";
 import {
-  newArrOne,
+ // newArrOne,
   newArrTwo,
-  newArrThree,
-  newArrFour,
+ // newArrThree,
+ // newArrFour,
 } from "../../../assets/images/index";
+import gadget3 from "../../../assets/images/products/gadgets/gadget3.png";
+
 import SampleNextArrow from "./SampleNextArrow";
 import SamplePrevArrow from "./SamplePrevArrow";
+
+
+import elec1 from "../../../assets/images/products/electronics/elec1.png";
+import elec7 from "../../../assets/images/products/electronics/elec7.png";
 
 const NewArrivals = () => {
   const settings = {
@@ -53,12 +59,13 @@ const NewArrivals = () => {
         <div className="px-2">
           <Product
             _id="100001"
-            img={newArrOne}
-            productName="Round Table Clock"
-            price="44.00"
+            img={elec7}
+            productName="65-Inch Smart TV"
+            category="electronics"
+            price="800.00"
             color="Black"
             badge={true}
-            des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis."
+            des="Ultra HD 65-inch smart television with vibrant display."
           />
         </div>
         <div className="px-2">
@@ -75,23 +82,25 @@ const NewArrivals = () => {
         <div className="px-2">
           <Product
             _id="100003"
-            img={newArrThree}
-            productName="cloth Basket"
-            price="80.00"
-            color="Mixed"
-            badge={true}
-            des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis."
+            img={gadget3}
+            productName="Wireless Joystick"
+            category="gadgets"
+            price="350.00"
+            color="Black"
+            badge={false}
+            des="Ergonomic wireless joystick for smooth and responsive gaming experience."
           />
         </div>
         <div className="px-2">
           <Product
             _id="100004"
-            img={newArrFour}
-            productName="Funny toys for babies"
-            price="60.00"
-            color="Mixed"
-            badge={false}
-            des="Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic excepturi quibusdam odio deleniti reprehenderit facilis."
+            img={elec1}
+            productName="Washing Machine"
+            category="electronics"
+            price="500.00"
+            color="Silver"
+            badge={true}
+            des="High-performance washing machine with energy-saving technology."
           />
         </div>
         <div className="px-2">

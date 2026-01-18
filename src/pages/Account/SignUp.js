@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { BsCheckCircleFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
-import { logoLight } from "../../assets/images";
-import  log1 from "../../assets/images/logo-white.png";
+//import { logoLight } from "../../assets/images";
+import  log1 from "../../assets/images/kortex1.png";
 
 const SignUp = () => {
   // ============= Initial State Start here =============
@@ -117,7 +117,7 @@ const SignUp = () => {
         zip
       ) {
         setSuccessMsg(
-          `Hello dear ${clientName}, Welcome you to OREBI Admin panel. We received your Sign up request. We are processing to validate your access. Till then stay connected and additional assistance will be sent to you by your mail at ${email}`
+          `Hello dear ${clientName}, Welcome you to kortex Admin panel. We received your Sign up request. We are processing to validate your access. Till then stay connected and additional assistance will be sent to you by your mail at ${email}`
         );
         setClientName("");
         setEmail("");
@@ -133,7 +133,7 @@ const SignUp = () => {
   return (
     <div className="w-full h-screen flex items-center justify-start">
       <div className="w-1/2 hidden lgl:inline-flex h-full text-white">
-        <div className="w-[450px] h-full bg-primeColor px-10 flex flex-col gap-6 justify-center">
+        <div className="w-[450px] h-full bg-[#212844] px-10 flex flex-col gap-6 justify-center">
           <Link to="/">
             <img src={log1} alt="logoImg" className="w-[80vw]" />
           </Link>
@@ -149,7 +149,7 @@ const SignUp = () => {
             </span>
             <p className="text-base text-gray-300">
               <span className="text-white font-semibold font-titleFont">
-                Get started fast with DELIGHT PROPERTIES
+                Get started fast with kortex
               </span>
               <br />
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab omnis
@@ -162,7 +162,7 @@ const SignUp = () => {
             </span>
             <p className="text-base text-gray-300">
               <span className="text-white font-semibold font-titleFont">
-                Access all DELIGHT PROPERTIES services
+                Access all kortex1 services
               </span>
               <br />
               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ab omnis
@@ -184,7 +184,7 @@ const SignUp = () => {
           </div>
           <div className="flex items-center justify-between mt-10">
             <p className="text-sm font-titleFont font-semibold text-gray-300 hover:text-white cursor-pointer duration-300">
-              © DELIGHT PROPERTIES
+              © kortex
             </p>
             <p className="text-sm font-titleFont font-semibold text-gray-300 hover:text-white cursor-pointer duration-300">
               Terms
@@ -200,15 +200,14 @@ const SignUp = () => {
       </div>
       <div className="w-full lgl:w-[500px] h-full flex flex-col justify-center">
         {successMsg ? (
-          <div className="w-[500px]">
-            <p className="w-full px-4 py-10 text-green-500 font-medium font-titleFont">
+          <div className=" lgl:w-[500px] w-full px-5">
+            <p className="w-full  py-10 text-green-500 font-medium font-titleFont">
               {successMsg}
             </p>
             <Link to="/signin">
               <button
-                className="w-full h-10 bg-primeColor rounded-md text-gray-200 text-base font-titleFont font-semibold 
-            tracking-wide hover:bg-black hover:text-white duration-300"
-              >
+                className="w-full h-10 bg-[#212844]  rounded-md text-gray-200 text-base font-titleFont font-semibold 
+            tracking-wide hover:bg-black hover:text-white duration-300">
                 Sign in
               </button>
             </Link>
@@ -216,7 +215,7 @@ const SignUp = () => {
         ) : (
           <form className="w-full lgl:w-[500px] h-screen flex items-center justify-center">
             <div className="px-6 py-4 w-full h-[96%] flex flex-col justify-start overflow-y-scroll scrollbar-thin scrollbar-thumb-primeColor">
-              <h1 className="font-titleFont underline underline-offset-4 decoration-[1px] font-semibold text-2xl mdl:text-3xl mb-4">
+              <h1 className="font-titleFont text-[#212844] underline underline-offset-4 decoration-[1px] font-semibold text-2xl mdl:text-3xl mb-4">
                 Create your account
               </h1>
               <div className="flex flex-col gap-3">
@@ -380,7 +379,7 @@ const SignUp = () => {
                     type="checkbox"
                   />
                   <p className="text-sm text-primeColor">
-                    I agree to the OREBI{" "}
+                    I agree to the kortex{" "}
                     <span className="text-blue-500">Terms of Service </span>and{" "}
                     <span className="text-blue-500">Privacy Policy</span>.
                   </p>
@@ -389,10 +388,9 @@ const SignUp = () => {
                   onClick={handleSignUp}
                   className={`${
                     checked
-                      ? "bg-primeColor hover:bg-black hover:text-white cursor-pointer"
+                      ? "bg-[#212844] hover:bg-black hover:text-white cursor-pointer"
                       : "bg-gray-500 hover:bg-gray-500 hover:text-gray-200 cursor-none"
-                  } w-full text-gray-200 text-base font-medium h-10 rounded-md hover:text-white duration-300`}
-                >
+                  } w-full text-gray-200 text-base font-medium h-10 rounded-md hover:text-white duration-300`}>
                   Create Account
                 </button>
                 <p className="text-sm text-center font-titleFont font-medium">
